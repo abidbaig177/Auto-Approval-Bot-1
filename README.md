@@ -4,4 +4,4 @@
 
 Can be found on Telegram as [Auto-Approve](https://t.me/Ku_Approve_bot).
 
-Anjani is a modern, easy-to-develop, fully async Telegram group managing bot for Telegram.
+A Fast And Simple Join Request Accpet Bot for Telegram.
