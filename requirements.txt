@@ -1,4 +1,2 @@
-pyrogram
-TgCrypto
-pymongo
-asyncio
+pyrogram==1.4.16
+tgcrypto
