@@ -3,7 +3,7 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, User, ChatJoinRequest
     
 app = Client(
-    "Auto Approved Bot",
+    "Auto Approval Bot",
     bot_token = environ["BOT_TOKEN"],
     api_id = int(environ["API_ID"]),
     api_hash = environ["API_HASH"]
