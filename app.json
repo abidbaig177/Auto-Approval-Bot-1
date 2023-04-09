@@ -24,11 +24,11 @@
     "CHID": {
       "description": "Enter your Force Subscribe channel ID",
       "required": true
-    },,
+    },
     "FSUB": {
       "description": "Enter your Force Subscribe channel Username without @",
       "required": true
-    },,
+    },
     "SUDO": {
       "description": "Enter Bot Owners IDS",
       "required": true
