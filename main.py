@@ -6,9 +6,9 @@ from database import add_user, add_group, all_users, all_groups, users, remove_u
 import random, asyncio
 from configs import cfg
     
-    API_ID="14055090"
-    BOT_TOKEN="6235334259:AAFJLg1nCLYrBqoc8LtvsTDG_JOTIeMxK7I"
-    API_HASH="a46f7b439d0afa45b7a69fc450f754e9"
+    API_ID=cfg.API_ID,
+    BOT_TOKEN=cfg.BOT_TOKEN,
+    API_HASH=cfg.API_HASH
     
 app = Client(
     "approver",
