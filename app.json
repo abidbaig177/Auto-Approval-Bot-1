@@ -21,30 +21,27 @@
       "description": "Enter your Bot token, get it from @BotFather",
       "required": true
     },
-    "CHID": {
+    "CHAT_ID": {
       "description": "Enter your Force Subscribe channel ID",
       "required": true
     },
-    "FSUB": {
-      "description": "Enter your Force Subscribe channel Username without @",
-      "required": true
-    },
-    "SUDO": {
-      "description": "Enter Bot Owners IDS",
-      "required": true
-    }
-        
-  },
-  
+    "APPROVED_WELCOME": {
+       "description": "APPROVED_WELCOME On Or Off",
+       "value": "on"
+   },
+    "APPROVED_WELCOME_TEXT": {
+       "description": "APPROVED_WELCOME_TEXT : Welcome Text",
+       "value": "Hello {mention}\nWelcome To {title}\n\nYour Auto Approved"
+   }
+},
+    "addons": [],
+    "buildpacks": [{
+        "url": "heroku/python"
+    }],
     "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "free"
-    }
-  },
-    "buildpacks": [
-        {
-            "url": "heroku/python"
+        "worker": {
+            "quantity": 1,
+            "size": "eco"
         }
-    ]
+    }
 }
