@@ -17,9 +17,9 @@ APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 @app.on_message(filters.private & filters.command(["start"]))
 async def start(client: app, message: Message):
     approvedbot = await client.get_me() 
-    button = [[ InlineKeyboardButton("📦 Repo", url="https://github.com/NomoreLakshya/Auto-Approval-Bot"), InlineKeyboardButton("Updates 📢", url="t.me/Kristen_Updates") ],
+    button = [[ InlineKeyboardButton("🕹 Develpoer", url="tg://user?id=5776889746"), InlineKeyboardButton("Updates 📢", url="t.me/Kristen_Updates") ],
               [ InlineKeyboardButton("➕️ Add Me To Your Chat ➕️", url=f"http://t.me/{approvedbot.username}?startgroup=botstart") ]]
-    await client.send_message(chat_id=message.chat.id, text=f"**__Hello {message.from_user.mention} Iam Auto Approver Join Request Bot Just [Add Me To Your Group Channnl](http://t.me/{approvedbot.username}?startgroup=botstart) || Repo https://github.com/NomoreLakshya/Auto-Approval-Bot||**__", reply_markup=InlineKeyboardMarkup(button), disable_web_page_preview=True)
+    await client.send_message(chat_id=message.chat.id, text=f"**__Hello {message.from_user.mention} Iam Auto Approver Join Request Bot Just Add Me To Your Group__**", reply_markup=InlineKeyboardMarkup(button), disable_web_page_preview=True)
 
 @app.on_chat_join_request((filters.group | filters.channel) & filters.chat(CHAT_ID) if CHAT_ID else (filters.group | filters.channel))
 async def autoapprove(client: app, message: ChatJoinRequest):
